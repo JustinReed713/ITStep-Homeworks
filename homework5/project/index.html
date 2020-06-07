@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Pokemon store</title>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            var element = $(".back-to-top"), display;
+            $(window).scroll(function () {
+                display = $(this).scrollTop() >= 500;
+                display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 200);
+            });
+        });
+    </script>
+    <div class="container">
+        <div class="header" id="top">
+            <div class="contacts">
+                Shop works 24/7
+                <br>
+                (if you open this
+                <br>
+                file on your PC)
+            </div>
+            <img class="logo" src="src/img/logo.png">
+            <div class="contacts">
+                Pika-pika?
+            </div>
+        </div>
+        <div class="navigation">
+            <div>
+                <a class="nav-button" href="src/html/404.html">
+                    Main
+                </a>
+            </div>
+            <div>
+                <a class="nav-button" href="src/html/404.html">
+                    Catalog
+                </a>
+            </div>
+            <div>
+                <a class="nav-button" href="src/html/404.html">
+                    Delivery
+                </a>
+            </div>
+            <div>
+                <a class="nav-button" href="src/html/404.html">
+                    Payment
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="goods">
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/094-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            98$
+                        </span>
+                        <span class="sale">
+                            49$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                Gengar
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/94-gengar"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/429-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            64$
+                        </span>
+                        <span class="sale">
+                            32$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                Mismagius
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/429-mismagius"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/477-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            56$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                dusknoir
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/477-dusknoir"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/442-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            78$
+                        </span>
+                        <span class="sale">
+                            39$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                spiritomb
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/442-spiritomb"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/354-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            32$
+                        </span>
+                        <span class="sale">
+                            16$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                banette
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/354-banette"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/487-11.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            128$
+                        </span>
+                        <span class="sale">
+                            64$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                giratina
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/487-giratina"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/130-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            56$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                gyarados
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/130-gyarados"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/135-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            56$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                jolteon
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/135-jolteon"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/131-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            82$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                lapras
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/131-lapras"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/145-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            128$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                zapdos
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/145-zapdos"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/152-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            12$
+                        </span>
+                        <span class="sale">
+                            6$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                chikorita
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/152-chikorita"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/196-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            84$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                espeon
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/196-espeon"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/079-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            2$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                slowpoke
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/79-slowpoke"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/009-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            56$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                blastoise
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/9-blastoise"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/155-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            12$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                cyndaquil
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/155-cyndaquil"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/470-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            84$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                leafeon
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/470-leafeon"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/448-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            56$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                lucario
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/448-lucario"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/417-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            12$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                pachirisu
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/417-pachirisu"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/255-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            12$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                torchic
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/255-torchic"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/001-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            6$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                bulbasaur
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/1-bulbasaur"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/374-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            24$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                beldum
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/374-beldum"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/599-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            24$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                klink
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/599-klink"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/025-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            48$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                pikachu
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/25-pikachu"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://pokemon.gameinfo.io/images/pokemon-go/webp/037-00.webp" alt="">
+                    <div class="price">
+                        <span class="sale">
+                            SALE
+                        </span>
+                        <span class="initial-price">
+                            12$
+                        </span>
+                        <span class="sale">
+                            28$
+                        </span>
+                    </div>
+                    <div class="dialog">
+                        <div class="dialog-form">
+                            <div class="product-title">
+                                vulpix
+                            </div>
+                            <div class="discount-info">
+                                50% discount
+                                <br>
+                                <span>
+                                    until 10.07.2019
+                                </span>
+                            </div>
+                            <div class="button-group">
+                                <div>
+                                    <a class="dialog-button" href="https://pokemon.gameinfo.io/ru/pokemon/37-vulpix"
+                                        target="blank">Info</a>
+                                </div>
+                                <div>
+                                    <a class="dialog-button" href="src/html/404.html">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    Shopping cart
+                </div>
+                <div class="cart-list">
+
+                </div>
+                <a class="purchase-button" href="src/html/404.html">
+                    Purchase
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            This site isn't use coockie files. And actualy not yet ready.
+        </div>
+        <div class="back-to-top" onclick="javascript:document.location.href='#top'">Back to top</div>
+    </div>
+</body>
+
+</html>

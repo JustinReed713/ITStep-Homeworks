@@ -1,0 +1,222 @@
+body {
+    background-image: url("../src/img/background.png");
+    background-attachment: fixed;
+}
+
+.main-container__wrapper {
+    width: 1300px;
+    margin: 0 auto 0 auto;
+    font-family: 'montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-container__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+    padding: 0 10px 0 10px;
+}
+
+.header__contacts {
+    font-size: 18px;
+}
+
+.header__contacts_styled {
+    width: 140px;
+    padding: 10px 0 10px 20px;
+}
+
+.header__logo {
+    height: 200px;
+}
+
+.main-container__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+}
+
+.navigation__nav-button {
+    color: rgb(0, 136, 136);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navigation__nav-button_styled {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    padding: 0 20px 0 20px;
+    transition: 0.2s;
+}
+
+.navigation__nav-button_styled:hover {
+    box-shadow: 0px -5px 0 rgb(0, 136, 136) inset;
+}
+
+.main-container__registration-form {
+    margin: 10px auto 10px auto;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+}
+
+.registration-form__header_position {
+    margin: 20px 40px 20px 120px;
+}
+
+.registration-form-header__title {
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'open sans';
+    color: rgba(0, 0, 0, 0.7);
+    margin: 20px 0 20px 0;
+}
+
+.registration-form-header__provide-info {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.registration-form-header__warning-denote {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.registration-form-header__warning-denote_important {
+    font-weight: 300;
+    color: rgb(255, 0, 0);
+}
+
+.registration-form__input {
+    margin: 20px 40px 20px 40px;
+}
+
+.input-group_styled {
+    padding: 10px 60px 40px 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.label_block-displayed {
+    display: block;
+    margin: 10px 60px 10px 60px;
+}
+
+.lable__text {
+    font-size: 14px;
+}
+
+.lable__text_denoted {
+    color: rgb(255, 0, 0);
+}
+
+.input_styled {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input_styled:focus {
+    border: 2px solid rgb(0, 136, 136);
+}
+
+.input_styled_position {
+    display: flex;
+}
+
+.input_styled_unbordered {
+    border: none;
+}
+
+.lable__text_position {
+    display: block;
+}
+
+.radio-button_position {
+    display: flex;
+    align-items: center;
+    margin: 2px 20px 0 20px;
+}
+
+.radio-button_styled {
+    width: 24px;
+    height: 24px;
+}
+
+.user-data-avatar_styled {
+    font-size: 16px;
+}
+
+.payment-card__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_styled_distance {
+    margin: 0 0 10px 0;
+}
+
+.input_styled_uppercase {
+    text-transform: uppercase;
+}
+
+.agriment-check_styled {
+    padding: 10px 60px 40px 15px;
+}
+
+.agriment-check__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.agriment-check__checkbox_styled {
+    width: 18px;
+    height: 18px;
+    margin: 0 20px 0 0;
+}
+
+.agriment-check__title {
+    font-size: 16px;
+}
+
+.agriment-check__title a {
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 136, 136);
+}
+
+.buttons-box__button {
+    font-size: 18px;
+    color: rgb(0, 136, 136);
+}
+
+.buttons-box__button_styled {
+    padding: 5px 20px 5px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(0, 136, 136);
+    background-color: white;
+    cursor: pointer;
+}
+
+.buttons-box__button_submit {
+    color: white;
+    background-color: rgb(0, 136, 136);
+}
+
+.footer {
+    color: rgb(0, 136, 136);
+}
+
+.main-container__footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(35, 47, 69);
+    color: white;
+}
+
+.error {
+    height: 800px;
+    margin: 0 auto 0 auto;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    background-image: url("../src/img/error.gif");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-align: center;
+}
+
+.win {
+    font-size: 42px;
+    font-family: 'Bangers', cursive;
+}
+.end {
+    padding: 12em 0 0 0;
+}
+.comebacker {
+    text-decoration: none;
+    color: rgb(230, 70, 70);
+}

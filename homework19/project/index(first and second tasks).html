@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .main-container__wrapper {
+            width: 90%;
+            display: flex;
+            align-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0px auto;
+        }
+
+        .person-card {
+            width: 400px;
+            height: 650px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: rgb(5, 64, 119);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 10px 20px;
+        }
+
+        .person-card__image {
+            width: 380px;
+            height: 500px;
+            border: 2px solid white;
+            margin: 10px auto 10px auto;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: 50%;
+            justify-self: start;
+        }
+
+        .card-title {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 0px auto 15px auto;
+        }
+
+        .card-title__field {
+            margin: 5px;
+            font-size: 22px;
+        }
+    </style>
+    <script>
+        'use script';
+
+        //   -----------------------   first task   -------------------------   //
+
+        function getElementCountByTagName(id, tag) {
+            const elementCounter = (id, tag) => {
+                let element = document.getElementById(id)
+                if (element === null) {
+                    const count = document.body.getElementsByTagName(tag).length;
+                    console.log(`No elements with "${id}" id was find in document.\nSearch "${tag}" continues on whole page.\n${count} elements with "${tag}" tag was find on page.`);
+                } else {
+                    const count = element.getElementsByTagName(tag).length;
+                    console.log(`${count} elements with "${tag}" tag was find in "${id}" element.`);
+                };
+            };
+
+            if (Array.isArray(tag)) {
+                for (const item of tag) {
+                    elementCounter(id, item);
+                };
+            } else {
+                elementCounter(id, tag);
+            };
+        };
+
+        //   -----------------------   second task   -------------------------   //
+
+        const arrayOfPersons = [
+            {
+                name: 'Ferdinand',
+                surname: 'Foch',
+                age: 54,
+                nationality: 'French',
+                skill: 'Military management',
+                zodiacSign: undefined,
+                height: 173,
+                isAlive: false
+            },
+            {
+                name: 'Jackson',
+                surname: 'Briggs',
+                age: 20,
+                nationality: 'USA',
+                skill: 'farmer',
+                height: 187,
+                specialTrait: 'mechanical arms',
+                isFictionalCharacter: true
+            },
+            {
+                name: 'Hideo',
+                surname: 'Kozima',
+                age: 56,
+                nationality: 'USA',
+                skill: 'game developer',
+                height: 173,
+                specialTrait: 'genius',
+                actualGames: ['Death Stranding', 'Metal Gear'],
+                isAlive: true
+            },
+            {
+                name: 'Kim',
+                surname: 'Kardashian',
+                age: 39,
+                nationality: 'USA',
+                skill: 'model',
+                height: 159,
+                zodiacSign: 'scorpio'
+            },
+            {
+                name: 'Mia',
+                surname: 'Khalifa',
+                age: 27,
+                nationality: 'Lebanon',
+                skill: 'actress',
+                height: 157,
+                zodiacSign: 'saggitarius',
+                specialTrait: 'very exspressionable',
+                isAlive: true,
+                isFictionalCharacter: false
+            },
+            {
+                name: 'Herman',
+                surname: 'Hesse',
+                age: 85,
+                nationality: 'Germany',
+                skill: 'writer',
+                zodiacSign: undefined,
+                isAlive: false,
+                isFictionalCharacter: false,
+                bibliography: ['Der Steppen Wolf', 'Das Glasperlenspiel']
+            },
+            {
+                name: 'Fedor',
+                surname: 'Dostoevsky',
+                age: 60,
+                nationality: 'Russia',
+                skill: 'writer',
+                isAlive: false,
+                isFictionalCharacter: false,
+                bibliography: ['The demons', 'The Crime and Punishment', 'The Idiot']
+            },
+            {
+                name: 'Doomguy',
+                surname: undefined,
+                age: undefined,
+                nationality: undefined,
+                skill: 'demon slayer',
+                zodiacSign: undefined,
+                isFictionalCharacter: true,
+                specialTrait: 'Angry a bit',
+            },
+            {
+                name: 'Sonic',
+                surname: 'The Hedgehog',
+                age: 13,
+                nationality: undefined,
+                zodiacSign: undefined,
+                isFictionalCharacter: true,
+                specialTrait: 'Fast as f#@k',
+            },
+            {
+                name: 'Bruce',
+                surname: 'Wayne',
+                age: 12,
+                isFictionalCharacter: true
+            },
+            {
+                name: 'Ella',
+                surname: 'Fitzgerald',
+                age: 79,
+                isFictionalCharacter: false,
+                isAlive: false,
+                specialTrait: 'Amazing voice',
+                signatureSongs: ['Cry Me a river', 'Hello Dolly', 'Summertime', 'In a sentimental mood']
+            }
+        ];
+
+        const body = document.body;
+        const mainContainer = document.createElement('div');
+        mainContainer.classList.add('main-container');
+        body.append(mainContainer);
+
+        const mainContainerWrapper = document.createElement('div');
+        mainContainerWrapper.classList.add('main-container__wrapper');
+        mainContainer.append(mainContainerWrapper);
+
+        for (const person of arrayOfPersons) {
+
+            //   --------  capitalizing first letter of string  ---------   //
+            const capitalize = (str) => {
+                if ((str === undefined) || (isNaN(str) === false)) {
+                    return str;
+                };
+                return str[0].toUpperCase() + str.slice(1, str.length);
+            };
+
+            //   ----------  constructing card of person  -----------   //
+            const frame = document.createElement('div');
+            frame.classList.add('person-card');
+            mainContainerWrapper.append(frame);
+
+            //   -----------  creating avatar of person  -------------  //
+            const logo = document.createElement('div');
+            logo.classList.add('person-card__image');
+            logo.style.backgroundImage = "url('src/img/" + person.name + ".jpg')";
+            frame.append(logo);
+
+            //   -----------  creating information section about person  -------------  //
+            const title = document.createElement('div');
+            title.classList.add('card-title');
+            frame.append(title);
+
+            //   ----------  create field wrapper for information  ----------   //
+            const fieldCreate = () => {
+                const field = document.createElement('div');
+                field.classList.add('card-title__field');
+                title.append(field);
+            };
+
+            //   -----------  declare an array of required fields information about person  --------------   //
+            const arrayOfFields = ['name', 'surname', 'age', 'nationality'];
+
+            //   -----------  declare an array of rest information fields  ----------------   //
+            const arrayOfKeys = Object.keys(person).filter(item => {
+                if (arrayOfFields.includes(item)) {
+                    return false;
+                };
+                return true;
+            });
+
+            //   ----------  create required fields  ------------   //
+            for (const item of arrayOfFields) {
+                fieldCreate();
+                title.lastChild.innerText = capitalize(item) + ":  " + ((person.hasOwnProperty(item)) ? capitalize(person[item]) : "????");
+            };
+
+            //   ----------  create fields of information about person with complicated array-value  ------------   //
+            for (const item of arrayOfKeys) {
+
+                //   ------------  parcing key-string into words  ---------------   //
+                const wordParser = (str) => {
+                    const wordsArray = [];
+                    let startPos = 0;
+                    for (let index = 0; index < str.length; index++) {
+                        if (str[index].toUpperCase() === str[index]) {
+                            wordsArray.push(str.slice(startPos, index).toLowerCase());
+                            startPos = index;
+                        };
+                    };
+                    wordsArray.push(str.slice(startPos, str.length).toLowerCase());
+                    return wordsArray.join(" ");
+                };
+
+                if (Array.isArray(person[item]) === true) {
+
+                    fieldCreate();
+
+                    const field = title.lastChild;
+                    const key = document.createElement('div');
+                    key.innerText = capitalize(wordParser(item)) + ":  ";
+                    field.style.display = 'flex';
+                    field.style.flexDirection = 'row';
+                    field.style.justifyContent = 'center';
+                    field.append(key);
+
+                    const list = document.createElement('ul');
+                    list.style.marginTop = '0px';
+                    list.style.marginBottom = '5px';
+                    list.style.paddingLeft = '20px';
+                    field.append(list);
+
+                    for (const iterator of person[item]) {
+                        const stringList = document.createElement('li');
+                        stringList.style.display = 'block';
+                        stringList.innerText = capitalize(iterator);
+                        list.append(stringList);
+                    };
+                };
+            };
+        };
+    </script>
+
+</body>
+
+</html>

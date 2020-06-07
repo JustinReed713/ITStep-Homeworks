@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("src/img/background.png");
+            background-attachment: fixed;
+        }
+
+        .main-container__wrapper {
+            width: 1300px;
+            margin: 0 auto 0 auto;
+            font-family: 'montserrat', sans-serif;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-container__header {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+            padding: 0 10px 0 10px;
+        }
+
+        .header__contacts {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .header__contacts_styled {
+            width: 140px;
+            padding: 10px 0 10px 20px;
+        }
+
+        .header__logo {
+            height: 200px;
+        }
+
+        .main-container__navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px 0 10px 0;
+            border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+        }
+
+        .navigation__nav-button {
+            color: rgb(0, 136, 136);
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .navigation__nav-button_styled {
+            display: block;
+            text-decoration: none;
+            outline: none;
+            background: rgb(255, 255, 255);
+            padding: 0 20px 0 20px;
+            transition: 0.2s;
+        }
+
+        .navigation__nav-button_styled:hover {
+            box-shadow: 0px -5px 0 rgb(0, 136, 136) inset;
+        }
+
+        .main-container__registration-form {
+            margin: 10px auto 10px auto;
+            border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+        }
+
+        .registration-form__header_position {
+            margin: 20px 40px 20px 120px;
+        }
+
+        .registration-form-header__title {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'open sans';
+            color: rgba(0, 0, 0, 0.7);
+            margin: 20px 0 20px 0;
+        }
+
+        .registration-form-header__provide-info {
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .registration-form-header__warning-denote {
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .registration-form-header__warning-denote_important {
+            font-weight: 300;
+            color: rgb(255, 0, 0);
+            margin: 0px 3px 0px 0px;
+        }
+
+        .registration-form__input {
+            margin: 20px 40px 20px 40px;
+        }
+
+        .input-group_styled {
+            padding: 10px 60px 40px 15px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .label_block-displayed {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 60px 10px 60px;
+        }
+
+        .label-text__wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .lable__text {
+            font-size: 14px;
+        }
+
+        .lable__text_denoted {
+            color: rgb(255, 0, 0);
+            margin: 0px 3px 0px 0px;
+        }
+
+        .input_styled {
+            width: 400px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            outline: none;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .input_styled:focus {
+            border: 2px solid rgb(0, 136, 136);
+        }
+
+        .input_styled_position {
+            display: flex;
+        }
+
+        .input_styled_unbordered {
+            border: none;
+        }
+
+        .lable__text_position {
+            display: block;
+        }
+
+        .radio-button__wrapper {
+            display: flex;
+        }
+
+        .radio-button_position {
+            display: flex;
+            align-items: center;
+            margin: 2px 20px 0 20px;
+        }
+
+        .radio-button_styled {
+            width: 24px;
+            height: 24px;
+        }
+
+        .user-data-avatar_styled {
+            font-size: 16px;
+            margin: 10px 0 10px 0;
+        }
+
+        .payment-card__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input_styled_distance {
+            margin: 0 0 10px 0;
+        }
+
+        .input_styled_uppercase {
+            text-transform: uppercase;
+        }
+
+        .agreement-check_styled {
+            padding: 10px 60px 40px 15px;
+        }
+
+        .agreement-check__wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .agreement-check__checkbox_styled {
+            width: 18px;
+            height: 18px;
+            margin: 0 20px 0 0;
+        }
+
+        .agreement-check__title {
+            font-size: 16px;
+        }
+
+        .agreement-check__title a {
+            text-decoration: none;
+            outline: none;
+            color: rgb(0, 136, 136);
+        }
+
+        .buttons-box__button {
+            font-size: 18px;
+            color: rgb(0, 136, 136);
+        }
+
+        .buttons-box__button_styled {
+            padding: 5px 20px 5px 20px;
+            border-radius: 7px;
+            border: 1px solid rgb(0, 136, 136);
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .buttons-box__button_submit {
+            color: white;
+            background-color: rgb(0, 136, 136);
+        }
+
+        .footer {
+            color: rgb(0, 136, 136);
+        }
+
+        .main-container__footer {
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+    </style>
+
+    <script>
+        'use strict';
+
+        //   ------   A magic function that makes a dirt. After refactoring it allows to reduce 100 lines of code   ------   //
+
+        const sectionCreator = (item, parent) => {
+            const elementCreator = (item) => {
+                if (item.hasOwnProperty('element') === true && typeof item === "object") {
+                    const element = document.createElement(item.element);
+                    if (Array.isArray(item.class)) {
+                        element.classList.add(...item.class);
+                    } else {
+                        element.classList.add(item.class);
+                    };
+                    delete item.element;
+                    delete item.class;
+                    if (item.hasOwnProperty('text')) {
+                        element.innerText = item.text;
+                        delete item.text;
+                    };
+                    if (item.hasOwnProperty('html')) {
+                        element.innerHTML = item.html;
+                        delete item.html;
+                    };
+                    if (item.hasOwnProperty('child')) {
+                        sectionCreator(item.child, element);
+                        delete item.child;
+                    };
+                    return Object.assign(element, item);
+                } else {
+                    console.error(`Error create an Element with ${item}`);
+                    return null;
+                };
+            };
+            if (Array.isArray(item)) {
+                for (const iterator of item) {
+                    let childNode = elementCreator(iterator);
+                    if (childNode === null) {
+                        continue
+                    };
+                    parent.append(childNode);
+                };
+            } else {
+                let childNode = elementCreator(item);
+                if (childNode === null) {
+                    return
+                };
+                parent.append(childNode);
+            };
+        };
+
+        // ----------------   declarate "body" and create main-container, all by BEM   -------------------   //
+
+        const body = document.body;
+
+        const mainContainer = document.createElement('div');
+        mainContainer.classList.add('main-container');
+        body.append(mainContainer);
+
+        const mainContainerWrapper = document.createElement('div');
+        mainContainerWrapper.classList.add('main-container__wrapper');
+        mainContainer.append(mainContainerWrapper);
+
+        //   --------------------   create inner sections of main-container   --------------------   //
+
+        const arrayOfMainContainerElementsClasses = [
+            ['header', 'main-container__header'],
+            ['navigation', 'main-container__navigation'],
+            ['registration-form', 'main-container__registration-form'],
+            ['footer', 'main-container__footer']
+        ];
+
+        for (let index = 0; index < arrayOfMainContainerElementsClasses.length; index++) {
+            const element = document.createElement('div');
+            element.classList.add(...arrayOfMainContainerElementsClasses[index]);
+            mainContainerWrapper.append(element);
+        };
+
+        const [header, navigation, registartionForm, footer] = mainContainerWrapper.getElementsByTagName('div');
+
+        //   --------------------   create inner elements of header   --------------------   //
+
+        const arrayOfHeaderElements = [
+            { element: 'div', class: ['header__contacts', 'header__contacts_styled'], text: `Shop works 24/7\n(if you open this\nfile on your PC,\nobviously)` },
+            { element: 'img', class: 'header__logo', src: 'src/img/logo.png' },
+            { element: 'div', class: ['header__contacts', 'header__contacts_styled'], text: `Pika-pika?\n\n*\nplace for your\nadvertisement\n\n*` }
+        ];
+
+        sectionCreator(arrayOfHeaderElements, header);
+
+        //   --------------------   create inner elements of navigation   --------------------   //
+
+        const arrayOfNavigationElements = [
+            {element: 'a', class: ['navigation__nav-button', 'navigation__nav-button_styled'],text: 'main', href: 'src/html/404/404.html'},
+            {element: 'a', class: ['navigation__nav-button', 'navigation__nav-button_styled'],text: 'catalog', href: 'src/html/404/404.html'},
+            {element: 'a', class: ['navigation__nav-button', 'navigation__nav-button_styled'],text: 'delivery', href: 'src/html/404/404.html'},
+            {element: 'a', class: ['navigation__nav-button', 'navigation__nav-button_styled'],text: 'payment', href: 'src/html/404/404.html'}
+        ];
+
+        sectionCreator(arrayOfNavigationElements, navigation);
+
+        //   --------------------   create inner elements of registration-form section   --------------------   //
+
+        const registrationFormHeader = document.createElement('div');
+        registrationFormHeader.classList.add('registration-form__header', 'registration-form__header_position');
+        registartionForm.append(registrationFormHeader);
+
+        const arrayRegistrationFormHeaderElements = [
+            {element: 'div', class: 'registration-form-header__title', text: 'Register'},
+            {element: 'div', class: 'registration-form-header__provide-info', text: 'Please provide the following information'},
+            {element: 'div', child: [
+                {element: 'span', class: 'registration-form-header__warning-denote_important', text: '*'},
+                {element: 'span', class: 'registration-form-header__warning-denote', text: 'denotes required information'}
+            ]}
+        ];
+
+        sectionCreator(arrayRegistrationFormHeaderElements, registrationFormHeader);
+
+        //   ----------------------   create form   -----------------------   //
+
+        const registrationFormInformationInput = document.createElement('form');
+        registrationFormInformationInput.classList.add('registration-information-input', 'registration-form__input');
+        registartionForm.append(registrationFormInformationInput);
+
+        //   ------------------   create information inputs   -------------------   //
+
+        const arrayOfRegistrationFormInputElements = [
+            {
+                element: 'div', class: ['registration-information-input__registration-data', 'input-group_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "email", child: [
+                            { element: 'span', class: 'lable__text', text: 'Email:' },
+                            { element: 'input', class: 'input_styled', id: "email", type: "email", name: "email", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "verify-email", child: [
+                            { element: 'span', class: 'lable__text', text: 'Verify email:' },
+                            { element: 'input', class: 'input_styled', id: "verify-email", type: "text", name: "verify-email", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "password", child: [
+                            { element: 'span', class: 'lable__text', text: 'Password:' },
+                            { element: 'input', class: 'input_styled', id: "password", type: "password", name: "password", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "verify-password", child: [
+                            { element: 'span', class: 'lable__text', text: 'Verify password:' },
+                            { element: 'input', class: 'input_styled', id: "verify-password", type: "password", name: "verify-password", required: true }]
+                    }
+                ]
+            },
+            {
+                element: 'div', class: ['registration-information-input__user-data', 'input-group_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "first-name", child: [
+                            { element: 'span', class: 'lable__text', text: 'First name:' },
+                            { element: 'input', class: 'input_styled', id: "first-name", type: "text", name: "first-name", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "last-name", child: [
+                            { element: 'span', class: 'lable__text', text: 'Last name:' },
+                            { element: 'input', class: 'input_styled', id: "last-name", type: "text", name: "last-name", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "date-of-birth", child: [
+                            { element: 'span', class: 'lable__text', text: 'Date of birth:' },
+                            { element: 'input', class: 'input_styled', id: "date-of-birth", type: "date", name: "date-of-birth" }]
+                    },
+                    {
+                        element: 'div', class: 'label_block-displayed', child: [
+                            { element: 'span', class: 'lable__text', text: 'Gender:' },
+                            {
+                                element: 'div', class: 'radio-button__wrapper', child: [
+                                    {
+                                        element: 'label', class: 'radio-button_position', for: "male", child: [
+                                            { element: 'input', class: "radio-button_styled", type: "radio", id: "male", value: "male", name: "gender", checked: true },
+                                            { element: 'span', class: ['lable__text', 'lable__text_position'], text: 'Male' }
+                                        ]
+                                    },
+                                    {
+                                        element: 'label', class: 'radio-button_position', for: "female", child: [
+                                            { element: 'input', class: "radio-button_styled", type: "radio", id: "female", value: "female", name: "gender" },
+                                            { element: 'span', class: ['lable__text', 'lable__text_position'], text: 'Female' }
+                                        ]
+                                    }
+                                ]
+                            }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "avatar", child: [
+                            { element: 'span', class: 'lable__text', text: 'Avatar:' },
+                            { element: 'input', class: 'user-data-avatar_styled', id: "avatar", type: "file", name: "avatar" }]
+                    }
+                ]
+            },
+            {
+                element: 'div', class: ['registration-information-input__address-data', 'input-group_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "address-line-one", child: [
+                            { element: 'span', class: 'lable__text', text: 'Address Line 1:' },
+                            { element: 'input', class: 'input_styled', id: "address-line-one", type: "text", name: "address-line-one", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "address-line-two", child: [
+                            { element: 'span', class: 'lable__text', text: 'Address Line 2:' },
+                            { element: 'input', class: 'input_styled', id: "address-line-two", type: "text", name: "address-line-two" }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "city", child: [
+                            { element: 'span', class: 'lable__text', text: 'City:' },
+                            { element: 'input', class: 'input_styled', id: "city", type: "text", name: "city", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "country-region", child: [
+                            { element: 'span', class: 'lable__text', text: 'Country/Region:' },
+                            { element: 'input', class: 'input_styled', id: "country-region", type: "text", name: "country-region", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "state-province", child: [
+                            { element: 'span', class: 'lable__text', text: 'State/Province:' },
+                            { element: 'input', class: 'input_styled', id: "state-province", type: "text", name: "state-province", required: true }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "zip-postal-code", child: [
+                            { element: 'span', class: 'lable__text', text: 'ZIP code/Postal code:' },
+                            { element: 'input', class: 'input_styled', id: "zip-postal-code", type: "text", name: "zip-postal-code", required: true }]
+                    }
+                ]
+            },
+            {
+                element: 'div', class: ['registration-information-input__additional-information', 'input-group_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "additional-information", child: [
+                            { element: 'span', class: 'lable__text', text: 'Additional information:' },
+                            { element: 'textarea', class: 'input_styled', id: "additional-information", name: "additional-information" }]
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "currency", child: [
+                            { element: 'span', class: 'lable__text', text: 'Address Line 2:' },
+                            {
+                                element: 'select', class: 'input_styled', id: "currency", name: "currency", child: [
+                                    { element: 'option', text: '€ - Euro' },
+                                    { element: 'option', text: '$ - Dollars' }
+                                ]
+                            }]
+                    }
+                ]
+            },
+            {
+                element: 'div', class: ['registration-information-input__payment-information', 'input-group_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "phone-number", child: [
+                            { element: 'span', class: 'lable__text', text: 'Phone number:' },
+                            { element: 'input', class: 'input_styled', id: "phone-number", type: "tel", name: "phone-number", pattern: "[0-9]{3}-[0-9]{3}-[0-9]{6}", required: true }]
+                    },
+                    {
+                        element: 'div', class: 'payment-card__wrapper', child: [
+                            {
+                                element: 'label', class: 'label_block-displayed', for: "card-informaion class", child: [
+                                    { element: 'span', class: 'lable__text', text: 'Payment card information:' },
+                                    { element: 'input', class: ['input_styled', 'input_styled_distance'], id: "card-informaion", type: "text", name: "card-information", pattern: "[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}", required: true }]
+                            },
+                            {
+                                element: 'label', class: 'label_block-displayed', for: "cardholder", child: [
+                                    { element: 'span', class: 'lable__text', text: 'Cardholder name:' },
+                                    { element: 'input', class: ['input_styled', 'input_styled_distance', 'input_styled_uppercase'], id: "cardholder", type: "text", name: "cardholder", required: true }]
+                            },
+                            {
+                                element: 'label', class: 'label_block-displayed', for: "expiration-date", child: [
+                                    { element: 'span', class: 'lable__text', text: 'Expiration date:' },
+                                    { element: 'input', class: ['input_styled', 'input_styled_distance'], id: "expiration-date", type: "text", name: "expiration-date", pattern: "[0-9]{2}/[0-9]{2}", required: true }]
+                            },
+                            {
+                                element: 'label', class: 'label_block-displayed', for: "cvc", child: [
+                                    { element: 'span', class: 'lable__text', text: 'CVC code:' },
+                                    { element: 'input', class: ['input_styled', 'input_styled_distance'], id: "cvc", type: "text", name: "cvc", pattern: "[0-9]{3}", required: true }]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                element: 'div', class: ['registration-information-input__agreement-check', 'agreement-check_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "confirm-terms", child:
+                        {
+                            element: 'div', class: 'agreement-check__wrapper', child: [
+                                { element: 'input', class: 'agreement-check__checkbox_styled', type: "checkbox", value: "isTerms", name: "confirm-terms", required: true },
+                                { element: 'div', class: "agreement-check__title", html: 'I agree to the <a href="src/html/404/404.html"> Terms of Use </a>.' }
+                            ]
+                        }
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "confirm-policy", child:
+                        {
+                            element: 'div', class: 'agreement-check__wrapper', child: [
+                                { element: 'input', class: 'agreement-check__checkbox_styled', type: "checkbox", value: "isPolicy", name: "confirm-policy", required: true },
+                                { element: 'div', class: "agreement-check__title", html: 'I agree to the <a href="src/html/404/404.html"> Privacy Policy </a>.' }
+                            ]
+                        }
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "confirm-distribution", child:
+                        {
+                            element: 'div', class: 'agreement-check__wrapper', child: [
+                                { element: 'input', class: 'agreement-check__checkbox_styled', type: "checkbox", value: "isUpdates", name: "confirm-distribution" },
+                                { element: 'div', class: "agreement-check__title", text: 'Get updates on News, Sales and more.' }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                element: 'div', class: ['registration-information-input__buttons-box', 'input-group_styled'],
+                child: [
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "submit", child:
+                            { element: 'input', class: ['buttons-box__button', 'buttons-box__button_styled', 'buttons-box__button_submit'], id: "submit", type: "submit", name: "submitbutton", value: "Submit" }
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "reset", child:
+                            { element: 'input', class: ['buttons-box__button', 'buttons-box__button_styled', 'buttons-box__button_reset'], id: "reset", type: "reset", name: "reset-button", value: "Reset" }
+                    },
+                    {
+                        element: 'label', class: 'label_block-displayed', for: "cancel", child:
+                            { element: 'input', class: ['buttons-box__button', 'buttons-box__button_styled', 'buttons-box__button_cancel'], id: "cancel", type: "button", name: "cancel-button", value: "Cancel" }
+                    }
+                ]
+            }
+        ];
+
+        sectionCreator(arrayOfRegistrationFormInputElements, registrationFormInformationInput);
+
+        const submitButton = document.getElementById('submit');
+        submitButton.addEventListener('click', ()=>console.log('Try to send form data'));
+
+        //   -----------------   denote all important inputs   -------------------   //
+
+        const collectionOfLabels = registartionForm.getElementsByTagName('label');
+
+        for (let index = 0; index < collectionOfLabels.length; index++) {
+            if (collectionOfLabels[index].getElementsByTagName('input').length > 0) {
+                const item = collectionOfLabels[index].getElementsByTagName('input')[0];
+                if (item.required === true && item.type != 'checkbox') {
+                    const title = collectionOfLabels[index].getElementsByTagName('span')[0];
+                    const titleWrapper = document.createElement('div');
+                    titleWrapper.classList.add('label-text__wrapper');
+                    collectionOfLabels[index].prepend(titleWrapper);
+                    const labelTextDenoted = document.createElement('span');
+                    labelTextDenoted.innerText = '*';
+                    labelTextDenoted.classList.add('lable__text_denoted');
+                    titleWrapper.append(labelTextDenoted, title);
+                };
+            };
+        };
+
+        //   --------------------   create inner elements of footer   --------------------   //
+
+        footer.innerText = "This site doesn't use cookie files. And actually is not ready yet.";
+
+    </script>
+</body>
+
+</html>

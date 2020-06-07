@@ -1,0 +1,90 @@
+.content {
+    text-transform: uppercase;
+    border: solid black 3px;
+    width: 100px;
+    margin: 5px 5px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+.content:after {
+    content: "content";
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+.example-style {
+    margin: 0 0 30px 0;
+}
+
+.example-title {
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.example-box {
+    padding: 10px 30px 10px 30px;
+}
+
+.v-direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h-direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.size-block-example-box {
+    width: 600px;
+}
+
+.central-block-third-example-box {
+    align-self: flex-end;
+}
+
+.central-block-fourth-example {
+    justify-content: space-around;
+}
+
+.left-block-fifth-example-box {
+    height: 230px;
+}
+
+.right-block-fifth-example-box {
+    justify-content: flex-start;
+}
+
+.sixth-example-box {
+    justify-content: flex-end;
+}
+
+.central-block-sixth-example {
+    align-self: flex-end;
+}
+
+.central-block-seventh-example {
+    width: 100%;
+}
+
+.top-central-block-seventh-example-box {
+    align-self: flex-end;
+}
+
+.central-central-block-seventh-example-box {
+    align-self: center;
+}
+
+.bottom-central-block-seventh-example-box {
+    align-self: flex-start;
+}

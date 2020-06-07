@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="main-container__wrapper">
+
+            <div class="header
+                        main-container__header">
+
+                <div class="header__contacts
+                            header__contacts_styled">
+                    Shop works 24/7
+                    <br>
+                    (if you open this
+                    <br>
+                    file on your PC)
+                </div>
+
+                <img class="header__logo" src="src/img/logo.png">
+
+                <div class="header__contacts
+                            header__contacts_styled">
+                    Pika-pika?
+                </div>
+            </div>
+
+            <div class="navigation
+                        main-container__navigation">
+
+                <a class="navigation__nav-button navigation__nav-button_styled" href="src/html/404.html">
+                    Main
+                </a>
+                <a class="navigation__nav-button navigation__nav-button_styled" href="src/html/404.html">
+                    Catalog
+                </a>
+                <a class="navigation__nav-button navigation__nav-button_styled" href="src/html/404.html">
+                    Delivery
+                </a>
+                <a class="navigation__nav-button navigation__nav-button_styled" href="src/html/404.html">
+                    Payment
+                </a>
+            </div>
+
+            <div class="registration-form
+                        main-container__registration-form">
+
+                <div class="registration-form__header
+                            registration-form__header_position">
+
+                    <div class="registration-form-header__title">
+                        Register
+                    </div>
+
+                    <div class="registration-form-header__provide-info">
+                        Please provide the following information
+                    </div>
+
+                    <div class="registration-form-header__warning-denote">
+                        <span class="registration-header__warning-denote_important">
+                            *
+                        </span>
+                        denotes required information
+                    </div>
+                </div>
+
+                <form class="registration-information-input
+                             registration-form__input">
+
+                    <div class="registration-information-input__registration-data
+                                input-group_styled">
+
+                        <label class="label_block-displayed" for="email">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Email:
+                            </span>
+                            <br>
+                            <input id="email" class="input_styled" type="email" name="email" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="verify-email">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Verify email:
+                            </span>
+                            <br>
+                            <input id="verify-email" class="input_styled" type="text" name="verify-email" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="password">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Password:
+                            </span>
+                            <br>
+                            <input id="password" class="input_styled" type="password" name="password" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="verify-password">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Verify password:
+                            </span>
+                            <br>
+                            <input id="verify-password" class="input_styled" type="password" name="verify-password"
+                                required>
+                        </label>
+
+                    </div>
+
+                    <div class="registration-information-input__user-data
+                                input-group_styled">
+
+                        <label class="label_block-displayed" for="first-name">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                First name:
+                            </span>
+                            <br>
+                            <input id="first-name" class="input_styled" type="text" name="first-name" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="last-name">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Last name:
+                            </span>
+                            <br>
+                            <input id="last-name" class="input_styled" type="text" name="last-name" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="date-of-birth">
+                            <span class="lable__text">
+                                Date of birth:
+                            </span>
+                            <br>
+                            <input id="date-of-birth" class="input_styled" type="date" name="date-of-birth">
+                        </label>
+
+                        <label class="label_block-displayed" for="gender">
+                            <span class="lable__text">
+                                Gender:
+                            </span>
+                            <br>
+
+                            <div class="input_styled
+                                        input_styled_position
+                                        input_styled_unbordered">
+
+                                <div class="radio-button_position">
+                                    <input class="radio-button_styled" type="radio" id="male" value="male" name="gender"
+                                        checked>
+                                    <span class="lable__text
+                                                 lable__text_position">
+                                        Male
+                                    </span>
+                                </div>
+
+                                <div class="radio-button_position">
+                                    <input class="radio-button_styled" type="radio" id="female" value="female"
+                                        name="gender">
+                                    <span class="lable__text
+                                                 lable__text_position">
+                                        Female
+                                    </span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="label_block-displayed" for="avatar">
+                            <span class="lable__text">
+                                Avatar:
+                            </span>
+                            <br>
+                            <input id="avatar" class="user-data-avatar_styled" type="file" name="avatar">
+                        </label>
+
+                    </div>
+
+                    <div class="registration-information-input__address-data
+                                input-group_styled">
+
+                        <label class="label_block-displayed" for="address-line-one">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Address Line 1:
+                            </span>
+                            <br>
+                            <input id="address-line-one" class="input_styled" type="text" name="address-line-one"
+                                required>
+                        </label>
+
+                        <label class="label_block-displayed" for="address-line-two">
+                            <span class="lable__text">
+                                Address Line 2:
+                            </span>
+                            <br>
+                            <input id="address-line-two" class="input_styled" type="text" name="address-line-two">
+                        </label>
+
+                        <label class="label_block-displayed" for="city">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                City:
+                            </span>
+                            <br>
+                            <input id="city" class="input_styled" type="text" name="city" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="country-region">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Country/Region:
+                            </span>
+                            <br>
+                            <input id="country-region" class="input_styled" type="text" name="country-region" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="state-province">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                State/Province:
+                            </span>
+                            <br>
+                            <input id="state-province" class="input_styled" type="text" name="state-province" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="zip-postal-code">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                ZIP code/Postal code:
+                            </span>
+                            <br>
+                            <input id="zip-postal-code" class="input_styled" type="text" name="zip-postal-code"
+                                required>
+                        </label>
+
+                    </div>
+
+                    <div class="registration-information-input__additional-information
+                                input-group_styled">
+
+                        <label class="label_block-displayed" for="additional-information">
+                            <span class="lable__text">
+                                Additional information:
+                            </span>
+                            <br>
+                            <textarea id="additional-information" class="input_styled"
+                                name="additional-information"></textarea>
+                        </label>
+
+                        <label class="label_block-displayed" for="currency">
+                            <span class="lable__text">
+                                Currency:
+                            </span>
+                            <br>
+                            <select id="currency" class="input_styled" name="currency">
+                                <option>
+                                    € - Euro
+                                </option>
+                                <option>
+                                    $ - Dollars
+                                </option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="registration-information-input__payment-information
+                                input-group_styled">
+
+                        <label class="label_block-displayed" for="phone-number">
+                            <span class="lable__text">
+                                <span class="lable__text_denoted">
+                                    *
+                                </span>
+                                Phone number:
+                            </span>
+                            <br>
+                            <input id="phone-number" class="input_styled" type="tel" name="phone-number"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{6}" required>
+                        </label>
+
+                        <label class="label_block-displayed" for="card-informaion">
+
+                            <div class="payment-card__wrapper">
+                                <span class="lable__text">
+                                    <span class="lable__text_denoted">
+                                        *
+                                    </span>
+                                    Payment card information:
+                                </span>
+                                <input id="card-informaion class" class="input_styled 
+                                                                         input_styled_distance" type="text"
+                                    name="card-information" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+
+                                <span class="lable__text">
+                                    <span class="lable__text_denoted">
+                                        *
+                                    </span>
+                                    Cardholder name:
+                                </span>
+                                <input class="input_styled
+                                              input_styled_distance
+                                              input_styled_uppercase" type="text" name="cardholder" required>
+
+                                <span class="lable__text">
+                                    <span class="lable__text_denoted">
+                                        *
+                                    </span>
+                                    Expiration date:
+                                </span>
+                                <input class="input_styled
+                                              input_styled_distance" type="text" name="expiration-date"
+                                    pattern="[0-9]{2}/[0-9]{2}" required>
+
+                                <span class="lable__text">
+                                    <span class="lable__text_denoted">
+                                        *
+                                    </span>
+                                    CVC code:
+                                </span>
+                                <input class="input_styled
+                                              input_styled_distance" type="text" name="cvc" pattern="[0-9]{3}"
+                                    required>
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <div class="registration-information-input__agriment-check
+                                agriment-check_styled">
+
+                        <label class="label_block-displayed" for="confirm-terms">
+
+                            <div class="agriment-check__wrapper">
+
+                                <input id="confirm-terms" class="agriment-check__checkbox_styled" type="checkbox"
+                                    value="isTerms" name="confirm-terms" required>
+
+                                <div class="agriment-check__title">
+                                    I agree to the
+                                    <a href="src/html/404.html">
+                                        Terms of Use
+                                    </a>
+                                    .
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="label_block-displayed" for="confirm-policy">
+
+                            <div class="agriment-check__wrapper">
+
+                                <input id="confirm-policy" class="agriment-check__checkbox_styled" type="checkbox"
+                                    value="isPolicy" name="confirm-policy" required>
+
+                                <div class="agriment-check__title">
+                                    I agree to the
+                                    <a href="src/html/404.html">
+                                        Privacy Policy
+                                    </a>
+                                    .
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="label_block-displayed" for="confirm-distribution">
+
+                            <div class="agriment-check__wrapper">
+
+                                <input id="confirm-distribution" class="agriment-check__checkbox_styled" type="checkbox"
+                                    value="isUpdates" name="confirm-distribution">
+
+                                <div class="agriment-check__title">
+                                    Get updates on News, Sales and more.
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <div class="registration-information-input__buttons-box
+                                input-group_styled">
+
+                        <label class="label_block-displayed" for="submit">
+                            <input class="buttons-box__button
+                                          buttons-box__button_styled
+                                          buttons-box__button_submit" type="submit" name="submit-button" value="Submit">
+                        </label>
+
+                        <label class="label_block-displayed" for="reset">
+                            <input class="buttons-box__button
+                                          buttons-box__button_styled
+                                          buttons-box__button_reset" type="reset" name="reset-button" value="Reset">
+                        </label>
+
+                        <label class="label_block-displayed" for="cancel">
+                            <input class="buttons-box__button
+                                          buttons-box__button_styled
+                                          buttons-box__button_cancel" type="button" name="cancel-button" value="Cancel" onclick="history.back(); return false;">
+                        </label>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="footer
+                        main-container__footer">
+                This site isn't use coockie files. And actualy not yet ready.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

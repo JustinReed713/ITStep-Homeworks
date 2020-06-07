@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/404.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Bangers&display=swap" rel="stylesheet">
+    <title>Error 404</title>
+</head>
+
+<body>
+    <style>
+        .curtain {
+            background-color: rgb(35, 47, 69);
+            text-align: center;
+        }
+
+        .curtain__button {
+            color: white;
+            font-size: 42px;
+            font-family: 'Bangers', cursive;
+            text-decoration: none;
+            display: block;
+            margin-top: 50vh;
+            cursor: pointer;
+        }
+    </style>
+    <div class="error">
+        <p class="win">
+            Yeah! You are the Winner!
+        </p>
+        <p class="win end">
+            And this is your prize!
+        </p>
+        <p>
+            So don't be affraid. It's normal. It's just like a those code from India.
+        </p>
+        <br>
+        Just
+        <a class="comebacker" href="#" onclick="history.back();return false;">
+            come back
+        </a>
+        .
+    </div>
+    <div class="curtain">
+        <span class="curtain__button" id="button">Press ME</span>
+    </div>
+    <audio id="ambient" controls hidden>
+        <script>
+            'use strict';
+
+            const showAll = () => {
+                let backgroundAudio = () => {
+                    audio.src = "src/ambient/error-ambient.mp3";
+                    audio.play();
+                };
+                audio.onended = function () {
+                    backgroundAudio();
+                };
+                curtain.hidden = true;
+                error.hidden = false;
+                audio.hidden = false;
+                backgroundAudio();
+                audio.addEventListener('mouseover', () => audio.style.opacity = 1);
+                audio.addEventListener('mouseleave', () => audio.style.opacity = 0.01);
+                audio.style.opacity = 0.1;
+                audio.volume = 0.15;
+
+            };
+
+            const curtain = document.body.getElementsByClassName('curtain')[0];
+            const error = document.body.getElementsByClassName('error')[0];
+            const audio = document.getElementById('ambient');
+            error.hidden = true;
+
+            const button = document.getElementById('button');
+
+            button.style.marginTop = ((this.innerHeight - window.getComputedStyle(button).clientHeight) / 2) + 'px';
+            button.addEventListener('click', showAll);
+        </script>
+</body>
+
+</html>

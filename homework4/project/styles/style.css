@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(233, 227, 221);
+}
+
+.header {
+    font: bold italic 3em 'cambria';
+    padding-top: 0.6em;
+    text-align: center;
+    height: 1em;
+}
+
+.content-conteiner {
+    background-color: rgb(164, 218, 218);
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.nav-list {
+    padding: 20px;
+    display: block;
+    border-bottom: black;
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 4%;
+}
+
+.articles {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-indent: 1.5em;
+    text-align: justify;
+    line-height:5px;
+}
+
+.articles-pictures {
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+.articles-pictures img {
+    width: 30%;
+    padding-left: 1%;
+}
+
+.first-article {
+    font: 1em 'Calibri';
+    margin-bottom: 100px;
+}
+
+.first-article h2 {
+    font: 3em 'Brush Script MT';
+}
+
+.second-article {
+    font: 1em 'courier';
+    margin-bottom: 100px;
+}
+
+.second-article h2 {
+    font: 3em 'Berlin Sans FB';
+}
+
+.third-article {
+    font: 1em 'arial';
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+}
+
+.third-article h2 {
+    font: 3em 'Calligraph';
+}
+
+.animate-list {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 20%;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px rgb(89, 55, 241) inset, 0 0 0 0 rgb(89, 55, 241);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: .15s ease-in-out;
+}
+
+.animate-list:hover {
+    box-shadow: 0 0 10px 0 rgb(89, 55, 241) inset, 0 0 10px 4px rgb(89, 55, 241);
+    color: rgb(89, 55, 241);
+}
+
+.backer {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.backer:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
