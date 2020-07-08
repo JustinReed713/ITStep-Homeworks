@@ -1,0 +1,6 @@
+.tab-button-panel {
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 150, 196);
+}

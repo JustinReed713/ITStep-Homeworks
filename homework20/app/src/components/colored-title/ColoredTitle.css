@@ -1,0 +1,21 @@
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.button-container {
+    display: inline;
+    margin-left: 15px;
+}
+
+.text-style {
+    font-size: 36px;
+    font-weight: 800;
+}

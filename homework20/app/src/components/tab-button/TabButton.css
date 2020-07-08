@@ -1,0 +1,21 @@
+.tab-button {
+    width: 120px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 25px 6px 3px 6px;
+    border-bottom: 8px solid transparent;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+
+.tab-button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.288);
+    transition: ease-in-out all 0.4s;
+}
+
+.tab-button_active {
+    border-color: red;
+}

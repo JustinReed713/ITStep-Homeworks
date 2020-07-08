@@ -1,0 +1,12 @@
+.HOC-fieldset {
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+.HOC-fieldset__legend {
+    text-align: left;
+    padding: 0px 25px;
+    font-size: 18px;
+    font-style: italic;
+}
