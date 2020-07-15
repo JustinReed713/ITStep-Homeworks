@@ -1,0 +1,89 @@
+.row-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.row-first-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-first-line__text-group-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-number {
+    margin-right: 20px;
+}
+
+.row-style:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.row-style:hover .control-buttons-group {
+    opacity: 1;
+}
+
+.control-buttons-group {
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+    justify-self: flex-end;
+}
+
+.time-mark {
+    padding-left: 15px;
+    border-left: 1px solid orange;
+    align-self: flex-end;
+}
+
+.row-first-line__number-description-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.component_hidden {
+    visibility: hidden;
+}
+
+.editable-field {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    padding: 4px 16px 4px 12px;
+    outline: none;
+    width: 35vw;
+}
+
+.editable-field:focus {
+    border-bottom: 1px solid rgb(50, 207, 255);
+}
+
+.editable-field:read-only {
+    border: none
+}
+
+input.editable-field:disabled {
+    opacity: 0.6;
+    background-color: white;
+}
+
+input.editable-field_done-successful:disabled {
+    text-decoration: green line-through;
+}
+
+input.editable-field_done-unsuccessful:disabled {
+    text-decoration: red line-through;
+}

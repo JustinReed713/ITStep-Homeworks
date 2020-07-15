@@ -1,0 +1,18 @@
+.MuiInputBase-input.Mui-disabled {
+    color: black;
+    border-bottom: none;
+}
+
+.large-icon_size {
+    font-size: 175px;
+    color: rgb(82, 82, 82);
+}
+
+.task-number {
+    user-select: none;
+}
+
+.list-container {
+    transition: all ease-in-out 0.9s;
+    width: 100%;
+}
